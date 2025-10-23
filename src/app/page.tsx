@@ -182,6 +182,28 @@ function DarkBentoSection() {
   )
 }
 
+function FinalCTA() {
+  return (
+    <div className="bg-gray-900 py-32">
+      <Container>
+        <div className="mx-auto max-w-2xl text-center">
+          <Heading as="h3" dark className="text-4xl font-medium">
+            Ready to connect your growth engine?
+          </Heading>
+          <p className="mt-6 text-lg text-gray-300">
+            In 30 minutes, we'll map a focused 100-day plan to measurable value.
+          </p>
+          <div className="mt-8">
+            <Button href="/contact" className="bg-white text-gray-900 hover:bg-gray-100">
+              Book a discovery call
+            </Button>
+          </div>
+        </div>
+      </Container>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -197,6 +219,7 @@ export default function Home() {
         <DarkBentoSection />
       </main>
       <Testimonials />
+      <FinalCTA />
       <Footer />
     </div>
   )

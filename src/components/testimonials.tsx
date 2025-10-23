@@ -20,44 +20,24 @@ import { Heading, Subheading } from './text'
 const testimonials = [
   {
     img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    name: 'VP, Regional Bank',
+    title: 'Financial Services',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'Our onboarding time dropped by 35% and pipeline visibility finally clicked for execs.',
   },
   {
     img: '/testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    name: 'Head of Mortgage Ops',
+    title: 'Real Estate & Mortgage',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'From property lead to clear-to-close, the handoffs are seamless now.',
   },
   {
     img: '/testimonials/amy-chase.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    name: 'CX Director, Boutique Hotel',
+    title: 'Travel & Hospitality',
     quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
-  },
-  {
-    img: '/testimonials/veronica-winton.jpg',
-    name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
-    quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
-  },
-  {
-    img: '/testimonials/dillon-lenora.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
-  },
-  {
-    img: '/testimonials/harriet-arron.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
-    quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
+      'Direct bookings and loyalty journeys gave us measurable lift in repeat stays.',
   },
 ]
 
@@ -156,15 +136,14 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
+        Ready to connect your growth engine? In 30 minutes, we'll map a focused 100-day plan to measurable value.
       </p>
       <div className="mt-2">
         <Link
-          href="#"
+          href="/contact"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
         >
-          Get started
+          Book a discovery call
           <ArrowLongRightIcon className="size-5" />
         </Link>
       </div>
@@ -194,7 +173,7 @@ export function Testimonials() {
         <div ref={setReferenceWindowRef}>
           <Subheading>What everyone is saying</Subheading>
           <Heading as="h3" className="mt-2">
-            Trusted by professionals.
+            Trusted by professionals
           </Heading>
         </div>
       </Container>
