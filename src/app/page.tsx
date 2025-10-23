@@ -19,7 +19,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'Salesforce implementation and data-driven digital marketing for financial services, real estate & mortgage, travel & hospitality, and high-volume contact centers.',
 }
 
 function Hero() {
@@ -27,29 +27,18 @@ function Hero() {
     <div className="relative">
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
       <Container className="relative">
-        <Navbar
-          banner={
-            <Link
-              href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
-              className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
-            >
-              Radiant raises $100M Series A from Tailwind Ventures
-              <ChevronRightIcon className="size-4" />
-            </Link>
-          }
-        />
+        <Navbar />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Close every deal.
+            Build revenue systems that scale
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Radiant helps you sell more by revealing sensitive information about
-            your customers.
+            Salesforce implementation and data-driven digital marketing for financial services, real estate & mortgage, travel & hospitality, and high-volume contact centers.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
-            <Button variant="secondary" href="/pricing">
-              See pricing
+            <Button href="/contact">Book a discovery call</Button>
+            <Button variant="secondary" href="/services">
+              Explore services
             </Button>
           </div>
         </div>
@@ -63,8 +52,11 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of your entire sales pipeline.
+          A single view of your growth engine
         </Heading>
+        <p className="mt-6 max-w-3xl text-lg/7 text-gray-600">
+          Align sales, service, marketing, and data around a shared Customer 360 so every team works from the same truth.
+        </p>
         <Screenshot
           width={1216}
           height={768}
@@ -81,14 +73,14 @@ function BentoSection() {
     <Container>
       <Subheading>Sales</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Know more about your customers than they do.
+        Get perfect clarity on your revenue engine
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Insight"
           title="Get perfect clarity"
-          description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+          description="Unify leads, accounts, households, and service history. Surface next-best actions with Data Cloud signals and automation."
           graphic={
             <div className="h-80 bg-[url(/screenshots/profile.png)] bg-size-[1000px_560px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
           }
@@ -97,8 +89,8 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Analysis"
-          title="Undercut your competitors"
-          description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
+          title="Prove what works"
+          description="Pipeline, attribution, and CSAT dashboards that tie journeys to revenue—so budgets follow impact."
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-size-[1100px_650px] bg-position-[left_-38px_top_-73px] bg-no-repeat" />
           }
@@ -107,8 +99,8 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Speed"
-          title="Built for power users"
-          description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
+          title="Build fast, adopt faster"
+          description="Vertical templates + change-management playbooks shorten time-to-value and boost adoption across teams."
           graphic={
             <div className="flex size-full pt-10 pl-10">
               <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
@@ -119,14 +111,14 @@ function BentoSection() {
         <BentoCard
           eyebrow="Source"
           title="Get the furthest reach"
-          description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
+          description="Connect your web forms, LOS/PMS/booking tools, and contact center to Salesforce. Clean data in, clean decisions out."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Limitless"
           title="Sell globally"
-          description="Radiant helps you sell in locations currently under international embargo."
+          description="Multi-brand, multi-region architectures with governance, privacy, and permissions designed in—so scale is safe."
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
@@ -141,15 +133,15 @@ function DarkBentoSection() {
       <Container>
         <Subheading dark>Outreach</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Customer outreach has never been easier.
+          Customer engagement, orchestrated
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
             eyebrow="Networking"
-            title="Sell at the speed of light"
-            description="Our RadiantAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
+            title="Launch targeted journeys"
+            description="Launch targeted journeys across email, search, and social—synced to CRM stages."
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-size-[851px_344px] bg-no-repeat" />
             }
@@ -159,8 +151,8 @@ function DarkBentoSection() {
           <BentoCard
             dark
             eyebrow="Integrations"
-            title="Meet leads where they are"
-            description="With thousands of integrations, no one will be able to escape your cold outreach."
+            title="Connect everything"
+            description="Connect CCaaS, core banking/LOS, PMS/booking, and analytics—no more swivel-chair ops."
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
@@ -168,16 +160,16 @@ function DarkBentoSection() {
           <BentoCard
             dark
             eyebrow="Meetings"
-            title="Smart call scheduling"
-            description="Automatically insert intro calls into your leads' calendars without their consent."
+            title="Embed scheduling"
+            description="Embed scheduling and intake directly into portals and campaigns."
             graphic={<LinkedAvatars />}
             className="lg:col-span-2 lg:rounded-bl-4xl"
           />
           <BentoCard
             dark
             eyebrow="Engagement"
-            title="Become a thought leader"
-            description="RadiantAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader."
+            title="Personalize content"
+            description="Personalize content and offers from first touch to renewal."
             graphic={
               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-size-[851px_344px] bg-no-repeat" />
             }
