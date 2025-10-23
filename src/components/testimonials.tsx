@@ -136,7 +136,7 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Ready to connect your growth engine? In 30 minutes, we'll map a focused 100-day plan to measurable value.
+        Ready to connect your growth engine? In 30 minutes, we&apos;ll map a focused 100-day plan to measurable value.
       </p>
       <div className="mt-2">
         <Link

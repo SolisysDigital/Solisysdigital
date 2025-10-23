@@ -4,7 +4,6 @@ import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
 import { Keyboard } from '@/components/keyboard'
-import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCloud } from '@/components/logo-cloud'
 import { LogoCluster } from '@/components/logo-cluster'
@@ -14,7 +13,6 @@ import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
-import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -191,7 +189,7 @@ function FinalCTA() {
             Ready to connect your growth engine?
           </Heading>
           <p className="mt-6 text-lg text-gray-300">
-            In 30 minutes, we'll map a focused 100-day plan to measurable value.
+            In 30 minutes, we&apos;ll map a focused 100-day plan to measurable value.
           </p>
           <div className="mt-8">
             <Button href="/contact" className="bg-white text-gray-900 hover:bg-gray-100">
