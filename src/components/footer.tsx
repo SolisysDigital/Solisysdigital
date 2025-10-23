@@ -10,20 +10,19 @@ function CallToAction() {
   return (
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
-        <Subheading>Get started</Subheading>
+        <Subheading>Ready to connect your growth engine?</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Let&apos;s map your next 100 days
           <br />
-          Start your free trial today.
+          to measurable value.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        In 30 minutes, we&apos;ll assess goals, risks, and the fastest path to value.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
-          Get started
+        <Button className="w-full sm:w-auto" href="/contact">
+          Book a discovery call
         </Button>
       </div>
     </div>
@@ -53,33 +52,35 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
+        <SitemapHeading>Services</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
+          <SitemapLink href="/services">Services</SitemapLink>
+          <SitemapLink href="/contact">Contact</SitemapLink>
           <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Support</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
+          <SitemapLink href="/company">About</SitemapLink>
+          <SitemapLink href="/contact">Contact</SitemapLink>
+          <SitemapLink href="/blog">Blog</SitemapLink>
+        </SitemapLinks>
+      </div>
+      <div>
+        <SitemapHeading>Legal</SitemapHeading>
+        <SitemapLinks>
+          <SitemapLink href="/terms">Terms & Conditions</SitemapLink>
+          <SitemapLink href="/privacy">Privacy Policy</SitemapLink>
+          <SitemapLink href="/refund">Refund Policy</SitemapLink>
+        </SitemapLinks>
+      </div>
+      <div>
+        <SitemapHeading>Connect</SitemapHeading>
+        <SitemapLinks>
+          <SitemapLink href="/contact">Book a Call</SitemapLink>
+          <SitemapLink href="mailto:hello@solisysdigital.com">Email Us</SitemapLink>
+          <SitemapLink href="tel:+15551234567">Call Us</SitemapLink>
         </SitemapLinks>
       </div>
     </>
@@ -148,7 +149,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Solisys Digital. All rights reserved.
     </div>
   )
 }
