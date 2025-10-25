@@ -139,7 +139,7 @@ function ContactForm() {
               <div className="pt-4">
                 <Button 
                   type="submit" 
-                  className="w-full bg-pink-600 text-white hover:bg-pink-700 py-4 text-lg"
+                  className="w-full py-4 text-lg"
                 >
                   Book a discovery call
                 </Button>

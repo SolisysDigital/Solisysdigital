@@ -131,17 +131,17 @@ function Values() {
 
 function TeamCTA() {
   return (
-    <div className="py-24 bg-gray-900">
+    <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-purple-200 py-32">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <Heading as="h3" dark className="text-4xl font-medium">
+          <Heading as="h3" className="text-4xl font-medium">
             Meet the team behind the plan
           </Heading>
-          <p className="mt-6 text-lg text-gray-300">
+          <p className="mt-6 text-lg text-gray-600">
             Ready to work with a partner who understands both your technology and marketing challenges?
           </p>
           <div className="mt-8">
-            <Button href="/contact" className="bg-gray text-purple-600 hover:bg-gray-100">
+            <Button href="/contact">
               Talk to an expert
             </Button>
           </div>

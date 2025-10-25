@@ -161,7 +161,7 @@ function ManagedServices() {
             <p className="text-lg text-gray-300 mb-8">
               Proactive admin, enhancements, and quarterly roadmap reviews.
             </p>
-            <Button href="/contact" className="bg-white text-gray-900 hover:bg-gray-100">
+            <Button href="/contact">
               Learn more
             </Button>
           </div>
@@ -173,17 +173,17 @@ function ManagedServices() {
 
 function CTASection() {
   return (
-    <div className="py-24 bg-gray-900">
+    <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-purple-200 py-32">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <Heading as="h3" dark className="text-4xl font-medium">
+          <Heading as="h3" className="text-4xl font-medium">
             Let&apos;s make the plan
           </Heading>
-          <p className="mt-6 text-lg text-gray-300">
+          <p className="mt-6 text-lg text-gray-600">
             Ready to connect your growth engine? In 30 minutes, we&apos;ll map a focused 100-day plan to measurable value.
           </p>
           <div className="mt-8">
-            <Button href="/contact" className="bg-white text-gray-900 hover:bg-gray-100">
+            <Button href="/contact">
               Book a discovery call
             </Button>
           </div>
