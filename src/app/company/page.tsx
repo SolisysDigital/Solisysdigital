@@ -13,42 +13,27 @@ export const metadata: Metadata = {
 }
 
 const values = [
-  {
-    title: 'Partnership',
-    description: 'We work alongside your team, not just as vendors. Your success is our success, and we measure it together.',
-  },
-  {
-    title: 'Clarity',
-    description: 'Complex problems deserve clear solutions. We cut through the jargon to deliver actionable insights and straightforward strategies.',
-  },
-  {
-    title: 'Speed',
-    description: 'Time to value matters. We deliver rapid implementations without sacrificing quality, using proven frameworks and best practices.',
-  },
-  {
-    title: 'Measurable impact',
-    description: 'We focus on outcomes, not activities. Every engagement is tied to KPIs that matter to your business.',
-  },
+  'Partnership',
+  'Clarity', 
+  'Speed',
+  'Measurable impact'
 ]
 
 const differentiators = [
   {
     title: 'Dual practice',
     description: 'Salesforce + marketing from day one',
-    details: 'Unlike traditional consultancies that focus on one domain, we bring together Salesforce expertise and digital marketing from the start. This unified approach eliminates silos between your tech stack and marketing operations, ensuring data flows seamlessly and teams align around shared goals.',
-    image: '/screenshots/company-dual practice1.png',
+    icon: '🤝',
   },
   {
     title: 'Vertical depth',
-    description: 'Financial Services Cloud patterns and deep integration expertise',
-    details: 'We specialize in Financial Services Cloud architecture, connecting Loan Origination Systems (LOS), Property Management Systems (PMS), Contact Center as a Service (CCaaS), and core banking platforms. Our industry-specific patterns reduce implementation risk and accelerate time to value.',
-    image: '/screenshots/Company-vertical depth1.png',
+    description: 'FSC patterns, LOS/PMS/CCaaS integrations',
+    icon: '🎯',
   },
   {
     title: 'Proven playbooks',
     description: 'discover → design → build → optimize',
-    details: 'Every engagement follows our battle-tested methodology: quick discovery to map goals and constraints, lean design workshops, rapid build cycles with continuous testing, and optimization based on real usage data. No reinvented wheels—just proven paths to measurable outcomes.',
-    image: '/screenshots/company-playbook1.png',
+    icon: '📋',
   },
 ]
 
@@ -112,20 +97,11 @@ function WhyDifferent() {
           {differentiators.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-white shadow-lg ring-1 ring-black/5 overflow-hidden hover:shadow-xl transition-shadow"
+              className="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-black/5 text-center hover:shadow-xl transition-shadow"
             >
-              <div className="h-48 bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center">
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                  className="h-32 w-auto object-contain"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-500 mb-3">{item.description}</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.details}</p>
-              </div>
+              <div className="text-4xl mb-4">{item.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+              <p className="text-gray-600">{item.description}</p>
             </div>
           ))}
         </div>
@@ -138,16 +114,15 @@ function Values() {
   return (
     <div className="py-24">
       <Container>
-        <div className="mx-auto max-w-4xl">
-          <Subheading className="text-3xl mb-12 text-center">Our values</Subheading>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mx-auto max-w-4xl text-center">
+          <Subheading className="text-3xl mb-8">Our values</Subheading>
+          <div className="flex flex-wrap justify-center gap-4">
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow"
+                className="px-6 py-3 bg-gray-900 text-white rounded-full text-sm font-medium"
               >
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                {value}
               </div>
             ))}
           </div>
