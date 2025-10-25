@@ -56,10 +56,10 @@ function FeatureSection() {
           Align sales, service, marketing, and data around a shared Customer 360 so every team works from the same truth.
         </p>
         <Screenshot
-          width={1216}
-          height={768}
-          src="/screenshots/app.png"
-          className="mt-16 h-144 sm:h-auto sm:w-304"
+          width={1920}
+          height={1080}
+          src="/screenshots/C360.png"
+          className="mt-16 w-full max-w-5xl mx-auto"
         />
       </Container>
     </div>
@@ -80,7 +80,7 @@ function BentoSection() {
           title="Get perfect clarity"
           description="Unify leads, accounts, households, and service history. Surface next-best actions with Data Cloud signals and automation."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-size-[1000px_560px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/Sf%20Pipelines1.png)] bg-contain bg-center bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -90,7 +90,7 @@ function BentoSection() {
           title="Prove what works"
           description="Pipeline, attribution, and CSAT dashboards that tie journeys to revenue—so budgets follow impact."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-size-[1100px_650px] bg-position-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/Sf%20Dashboard3.png)] bg-contain bg-center bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -100,9 +100,7 @@ function BentoSection() {
           title="Build fast, adopt faster"
           description="Vertical templates + change-management playbooks shorten time-to-value and boost adoption across teams."
           graphic={
-            <div className="flex size-full pt-10 pl-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
+            <div className="h-80 bg-[url(/screenshots/buildfast-ai-1.png)] bg-contain bg-center bg-no-repeat" />
           }
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
@@ -141,7 +139,7 @@ function DarkBentoSection() {
             title="Launch targeted journeys"
             description="Launch targeted journeys across email, search, and social—synced to CRM stages."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/networking.png)] bg-size-[851px_344px] bg-no-repeat" />
+              <div className="h-80 pt-8 bg-[url(/screenshots/Targetted-journeys2.png)] bg-contain bg-center bg-no-repeat opacity-90 rounded-2xl" />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
@@ -169,7 +167,7 @@ function DarkBentoSection() {
             title="Personalize content"
             description="Personalize content and offers from first touch to renewal."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-size-[851px_344px] bg-no-repeat" />
+              <div className="h-80 p-8 bg-[url(/screenshots/Pers%20Service1.png)] bg-contain bg-center bg-no-repeat opacity-90 rounded-2xl" />
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"

@@ -68,11 +68,12 @@ function Story() {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <div className="aspect-square w-full max-w-md rounded-2xl bg-gradient-to-br from-blue-50 to-pink-50 p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">📊</div>
-                  <p className="text-sm text-gray-600">Data-driven growth</p>
-                </div>
+              <div className="aspect-square w-full max-w-md rounded-2xl overflow-hidden">
+                <img 
+                  src="/screenshots/OurStory1.jpg" 
+                  alt="Our Story"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -140,7 +141,7 @@ function TeamCTA() {
             Ready to work with a partner who understands both your technology and marketing challenges?
           </p>
           <div className="mt-8">
-            <Button href="/contact" className="bg-white text-gray-900 hover:bg-gray-100">
+            <Button href="/contact" className="bg-gray text-purple-600 hover:bg-gray-100">
               Talk to an expert
             </Button>
           </div>
