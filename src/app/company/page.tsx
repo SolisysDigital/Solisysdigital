@@ -13,27 +13,42 @@ export const metadata: Metadata = {
 }
 
 const values = [
-  'Partnership',
-  'Clarity', 
-  'Speed',
-  'Measurable impact'
+  {
+    title: 'Partnership',
+    description: 'We work alongside your team, not just as vendors. Your success is our success, and we measure it together.',
+  },
+  {
+    title: 'Clarity',
+    description: 'Complex problems deserve clear solutions. We cut through the jargon to deliver actionable insights and straightforward strategies.',
+  },
+  {
+    title: 'Speed',
+    description: 'Time to value matters. We deliver rapid implementations without sacrificing quality, using proven frameworks and best practices.',
+  },
+  {
+    title: 'Measurable impact',
+    description: 'We focus on outcomes, not activities. Every engagement is tied to KPIs that matter to your business.',
+  },
 ]
 
 const differentiators = [
   {
     title: 'Dual practice',
-    description: 'Salesforce + Digital Marketing from Day 1',
-    icon: '🤝',
+    description: 'Salesforce + marketing from day one',
+    details: 'Unlike traditional consultancies that focus on one domain, we bring together Salesforce expertise and digital marketing from the start. This unified approach eliminates silos between your tech stack and marketing operations, ensuring data flows seamlessly and teams align around shared goals.',
+    image: '/screenshots/company-dual practice1.png',
   },
   {
     title: 'Vertical depth',
-    description: 'Financial Services, Advisor Desktop, Loan Orignation integrations',
-    icon: '🎯',
+    description: 'Financial Services Cloud patterns and deep integration expertise',
+    details: 'We specialize in Financial Services Cloud architecture, connecting Loan Origination Systems (LOS), Property Management Systems (PMS), Contact Center as a Service (CCaaS), and core banking platforms. Our industry-specific patterns reduce implementation risk and accelerate time to value.',
+    image: '/screenshots/Company-vertical depth1.png',
   },
   {
     title: 'Proven playbooks',
-    description: 'Discover → Design → Build → Optimize',
-    icon: '📋',
+    description: 'discover → design → build → optimize',
+    details: 'Our agile methodology ensures predictable outcomes and continuous improvement. From initial discovery and solution design to rapid build cycles and ongoing optimization, our proven playbooks deliver measurable results and accelerate your path to success.',
+    image: '/screenshots/company-playbook1.png',
   },
 ]
 
@@ -91,17 +106,26 @@ function WhyDifferent() {
     <div className="py-24 bg-gray-50">
       <Container>
         <div className="text-center mb-16">
-          <Subheading className="text-3xl">Why we are different</Subheading>
+          <Subheading className="text-3xl">Why we&apos;re different</Subheading>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {differentiators.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-black/5 text-center hover:shadow-xl transition-shadow"
+              className="rounded-2xl bg-white p-0 shadow-lg ring-1 ring-black/5 text-left hover:shadow-xl transition-shadow"
             >
-              <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
-              <p className="text-gray-600">{item.description}</p>
+              <div className="relative h-48 w-full overflow-hidden rounded-t-2xl bg-gradient-to-br from-blue-100 via-purple-100 to-purple-200">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="absolute inset-0 h-full w-full object-cover object-center opacity-80"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 text-sm mb-4">{item.description}</p>
+                <p className="text-gray-500 text-sm">{item.details}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -114,15 +138,16 @@ function Values() {
   return (
     <div className="py-24">
       <Container>
-        <div className="mx-auto max-w-4xl text-center">
-          <Subheading className="text-3xl mb-8">Our values</Subheading>
-          <div className="flex flex-wrap justify-center gap-4">
+        <div className="mx-auto max-w-4xl">
+          <Subheading className="text-3xl mb-12 text-center">Our values</Subheading>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {values.map((value, index) => (
               <div
                 key={index}
-                className="px-6 py-3 bg-gray-900 text-white rounded-full text-sm font-medium"
+                className="rounded-2xl bg-gray-50 p-8 shadow-lg ring-1 ring-black/5 hover:shadow-xl transition-shadow"
               >
-                {value}
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
           </div>
