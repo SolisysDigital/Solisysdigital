@@ -13,6 +13,39 @@ export const metadata: Metadata = {
     'End-to-end Salesforce delivery and ROI-focused digital marketing that work together.',
 }
 
+const capabilities = [
+  {
+    title: 'Strategy',
+    description: 'Strategic planning and business intelligence',
+    details: 'Business Consulting, 360° Customer View, Multi-Channel Campaigns, CRM & Loyalty Programs, Full-Funnel Optimization, KPIs & Data Insights',
+  },
+  {
+    title: 'Media',
+    description: 'Digital media planning and execution',
+    details: 'Digital Planning & Buying, Programmatic Advertising, Paid Search & Social, Segmentation Targeting, CDP Integrated Audiences',
+  },
+  {
+    title: 'Creative',
+    description: 'Creative services and brand design',
+    details: 'Creative & Art Direction, Web, Email & Social, Display Ads & Banner, Video & Motion Design, UX & UI, Copywriting',
+  },
+  {
+    title: 'Marketing Cloud',
+    description: 'Salesforce Marketing Cloud expertise',
+    details: 'CDP, Email Studio, Ad Studio, Marketing Cloud Connect, Marketing Cloud API, Mobile Connect & Mobile Push, Automation Studio, Interaction Studio, Journey Builder, Sales Cloud, Intelligence (Datorama), Complex & Dynamic Content, AMPscript & SSJS Coding',
+  },
+  {
+    title: 'Financial Services Consulting',
+    description: 'Salesforce solutions for financial institutions',
+    details: 'Salesforce Consulting for Financial Services Clients, Wealth Management CRM Solutions, Compliance & Regulatory Alignment, Client Lifecycle Management, Advisor Productivity Tools, Secure Data Integration & Reporting',
+  },
+  {
+    title: 'AI Services',
+    description: 'Artificial intelligence and automation',
+    details: 'Development of Sales Chatbots, Development of Service Chatbots, Conversational AI Strategy, Natural Language Processing (NLP), AI-Powered Personalization, Predictive Lead Scoring & Insights',
+  },
+]
+
 const sectors = [
   {
     title: 'Financial Services',
@@ -127,6 +160,34 @@ function ServicesSection() {
   )
 }
 
+function CapabilitiesSection() {
+  return (
+    <div className="py-24 bg-gray-50">
+      <Container>
+        <div className="text-center mb-16">
+          <Subheading className="text-3xl">Capabilities</Subheading>
+        </div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {capabilities.map((capability, index) => (
+            <div
+              key={index}
+              className="rounded-2xl bg-white p-8 shadow-lg ring-1 ring-black/5 text-left hover:shadow-xl transition-shadow"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{capability.title}</h3>
+              <p className="text-gray-600 text-sm mb-4">{capability.description}</p>
+              <ul className="list-disc list-inside text-gray-500 text-sm space-y-1">
+                {capability.details.split(', ').map((detail, i) => (
+                  <li key={i}>{detail}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </div>
+  )
+}
+
 function SectorsSection() {
   return (
     <div className="py-24 bg-gray-50">
@@ -202,6 +263,7 @@ export default function Services() {
       </Container>
       <Hero />
       <ServicesSection />
+      <CapabilitiesSection />
       <SectorsSection />
       <ManagedServices />
       <CTASection />
