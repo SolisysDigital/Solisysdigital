@@ -22,17 +22,17 @@ const values = [
 const differentiators = [
   {
     title: 'Dual practice',
-    description: 'Salesforce + marketing from day one',
+    description: 'Salesforce + Digital Marketing from Day 1',
     icon: '🤝',
   },
   {
     title: 'Vertical depth',
-    description: 'FSC patterns, LOS/PMS/CCaaS integrations',
+    description: 'Financial Services, Advisor Desktop, Loan Orignation integrations',
     icon: '🎯',
   },
   {
     title: 'Proven playbooks',
-    description: 'discover → design → build → optimize',
+    description: 'Discover → Design → Build → Optimize',
     icon: '📋',
   },
 ]
@@ -91,7 +91,7 @@ function WhyDifferent() {
     <div className="py-24 bg-gray-50">
       <Container>
         <div className="text-center mb-16">
-          <Subheading className="text-3xl">Why we&apos;re different</Subheading>
+          <Subheading className="text-3xl">Why we are different</Subheading>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {differentiators.map((item, index) => (
