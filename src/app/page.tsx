@@ -30,7 +30,7 @@ function Hero() {
           <h1 className="font-display text-5xl/[1.2] font-medium tracking-tight text-balance text-gray-950 sm:text-6xl/[1.2] md:text-7xl/[1.2]">
             Accelerate your growth with Salesforce and Digital Marketing
           </h1>
-          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+          <p className="mt-8 max-w-3xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Salesforce implementation and data-driven digital marketing for financial services, real estate & mortgage, travel & hospitality, and high-volume contact centers.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
