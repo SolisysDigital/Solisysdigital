@@ -79,8 +79,8 @@ function Sitemap() {
         <SitemapHeading>Connect</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/contact">Book a Call</SitemapLink>
-          <SitemapLink href="mailto:hello@solisysdigital.com">Email Us</SitemapLink>
-          <SitemapLink href="tel:+15551234567">Call Us</SitemapLink>
+          <SitemapLink href="mailto:service@solisysdigital.com">Email Us</SitemapLink>
+          <SitemapLink href="tel:+14158056617">Call Us</SitemapLink>
         </SitemapLinks>
       </div>
     </>
