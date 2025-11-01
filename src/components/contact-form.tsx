@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Subheading } from '@/components/text'
@@ -16,6 +16,7 @@ const sectors = [
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const formRef = useRef<HTMLFormElement>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -44,7 +45,7 @@ export function ContactForm() {
 
       if (response.ok) {
         setSubmitStatus('success')
-        e.currentTarget.reset()
+        formRef.current?.reset()
       } else {
         const responseText = await response.text()
         console.error('Error response status:', response.status)
@@ -87,7 +88,7 @@ export function ContactForm() {
               </div>
             )}
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
