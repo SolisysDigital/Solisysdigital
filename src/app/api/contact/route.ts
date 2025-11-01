@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: 'Solisys Digital Contact Form <onboarding@resend.dev>',
-      to: ['service@solisysdigital.com'],
+      to: ['solisys@solisyspro.com'],
       subject: `New Contact Form Submission from ${name} - ${company}`,
       html: `
         <h2>New Contact Form Submission</h2>
