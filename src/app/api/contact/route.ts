@@ -49,10 +49,11 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ message: 'Email sent successfully!', data }, { status: 200 })
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('API route error:', error)
+    const errorMessage = error instanceof Error ? error.message : String(error)
     return NextResponse.json(
-      { message: 'An unexpected error occurred.', details: error.message || error },
+      { message: 'An unexpected error occurred.', details: errorMessage },
       { status: 500 }
     )
   }
