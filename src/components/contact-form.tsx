@@ -45,6 +45,8 @@ export function ContactForm() {
         setSubmitStatus('success')
         e.currentTarget.reset()
       } else {
+        const errorData = await response.json()
+        console.error('Error response:', errorData)
         setSubmitStatus('error')
       }
     } catch (error) {
