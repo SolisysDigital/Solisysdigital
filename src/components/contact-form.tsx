@@ -46,12 +46,19 @@ export function ContactForm() {
         setSubmitStatus('success')
         e.currentTarget.reset()
       } else {
-        console.error('Error response:', response)
+        const responseText = await response.text()
+        console.error('Error response status:', response.status)
+        console.error('Error response headers:', response.headers)
+        console.error('Error response body:', responseText)
         setSubmitStatus('error')
+        alert(`Error ${response.status}: ${responseText}`)
       }
     } catch (error) {
       console.error('Error submitting form:', error)
+      console.error('Error stack:', error instanceof Error ? error.stack : 'No stack trace')
+      console.error('Full error details:', JSON.stringify(error, null, 2))
       setSubmitStatus('error')
+      alert(`Caught error: ${error instanceof Error ? error.message : String(error)}`)
     } finally {
       setIsSubmitting(false)
     }
