@@ -26,7 +26,7 @@ export function ContactForm() {
     const formData = new FormData(e.currentTarget)
     
     try {
-      const response = await fetch('https://formsubmit.co/ef09207ebe9b726100ee3bdcd0e7d03c', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,8 +38,6 @@ export function ContactForm() {
           phone: formData.get('phone'),
           sector: formData.get('sector'),
           goals: formData.get('goals'),
-          _subject: `New Contact Form Submission from ${formData.get('name')} - ${formData.get('company')}`,
-          _next: window.location.origin + '/contact',
         }),
       })
 
@@ -47,12 +45,12 @@ export function ContactForm() {
         setSubmitStatus('success')
         formRef.current?.reset()
       } else {
-        const responseText = await response.text()
+        const errorData = await response.json()
         console.error('Error response status:', response.status)
         console.error('Error response headers:', response.headers)
-        console.error('Error response body:', responseText)
+        console.error('Error response body:', errorData)
         setSubmitStatus('error')
-        alert(`Error ${response.status}: ${responseText}`)
+        alert(`Error ${response.status}: ${errorData.message || JSON.stringify(errorData)}`)
       }
     } catch (error) {
       console.error('Error submitting form:', error)
