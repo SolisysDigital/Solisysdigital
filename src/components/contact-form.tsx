@@ -23,30 +23,29 @@ export function ContactForm() {
     setSubmitStatus('idle')
 
     const formData = new FormData(e.currentTarget)
-    const data = {
-      name: formData.get('name'),
-      company: formData.get('company'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      sector: formData.get('sector'),
-      goals: formData.get('goals'),
-    }
-
+    
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://formsubmit.co/service@solisysdigital.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          name: formData.get('name'),
+          company: formData.get('company'),
+          email: formData.get('email'),
+          phone: formData.get('phone'),
+          sector: formData.get('sector'),
+          goals: formData.get('goals'),
+          _subject: `New Contact Form Submission from ${formData.get('name')} - ${formData.get('company')}`,
+        }),
       })
 
       if (response.ok) {
         setSubmitStatus('success')
         e.currentTarget.reset()
       } else {
-        const errorData = await response.json()
-        console.error('Error response:', errorData)
+        console.error('Error response:', response)
         setSubmitStatus('error')
       }
     } catch (error) {
