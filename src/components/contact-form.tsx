@@ -25,7 +25,7 @@ export function ContactForm() {
     const formData = new FormData(e.currentTarget)
     
     try {
-      const response = await fetch('https://formsubmit.co/service@solisysdigital.com', {
+      const response = await fetch('https://formsubmit.co/ef09207ebe9b726100ee3bdcd0e7d03c', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,6 +38,7 @@ export function ContactForm() {
           sector: formData.get('sector'),
           goals: formData.get('goals'),
           _subject: `New Contact Form Submission from ${formData.get('name')} - ${formData.get('company')}`,
+          _next: window.location.origin + '/contact',
         }),
       })
 
