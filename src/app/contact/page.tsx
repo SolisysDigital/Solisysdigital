@@ -20,7 +20,7 @@ function Hero() {
           Let&apos;s map your next 100 days
         </Heading>
         <Lead className="mt-6 text-xl">
-          In 30 minutes, we&apos;ll assess goals, risks, and the fastest path to value.
+          We will assess goals, risks, and the fastest path to value.
         </Lead>
       </div>
     </Container>
