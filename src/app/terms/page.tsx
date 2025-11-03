@@ -33,14 +33,14 @@ export default function Terms() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">1. Acceptance of Terms</Subheading>
               <p className="text-gray-700 mb-4">
-                By accessing or using services provided by Solisys Digital, LLC ("we," "us," or "our"), you agree to be bound by these Terms & Conditions. If you do not agree to these terms, you must not use our services. These terms constitute a legally binding agreement between you and Solisys Digital.
+                By accessing or using services provided by Solisys Digital, LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), you agree to be bound by these Terms &amp; Conditions. If you do not agree to these terms, you must not use our services. These terms constitute a legally binding agreement between you and Solisys Digital.
               </p>
             </section>
 
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">2. Scope of Services</Subheading>
               <p className="text-gray-700 mb-4">
-                Solisys Digital provides Salesforce consulting, implementation, configuration, and digital marketing services as outlined in individual Statements of Work ("SOW"). Services may include but are not limited to: Salesforce platform setup and optimization, custom development, user training, digital marketing strategy, campaign management, data analytics, and ongoing technical support. Specific deliverables and timelines are defined in each SOW.
+                Solisys Digital provides Salesforce consulting, implementation, configuration, and digital marketing services as outlined in individual Statements of Work (&quot;SOW&quot;). Services may include but are not limited to: Salesforce platform setup and optimization, custom development, user training, digital marketing strategy, campaign management, data analytics, and ongoing technical support. Specific deliverables and timelines are defined in each SOW.
               </p>
             </section>
 
@@ -61,7 +61,7 @@ export default function Terms() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">5. Intellectual Property Rights</Subheading>
               <p className="text-gray-700 mb-4">
-                Client retains all rights, title, and interest in pre-existing intellectual property provided to Solisys Digital. Solisys Digital retains ownership of its proprietary methodologies, tools, frameworks, templates, and general know-how developed independently. Custom deliverables created specifically for Client and paid for in full shall become Client's property upon final payment, subject to Solisys Digital's right to use anonymized, aggregated data for improving its services.
+                Client retains all rights, title, and interest in pre-existing intellectual property provided to Solisys Digital. Solisys Digital retains ownership of its proprietary methodologies, tools, frameworks, templates, and general know-how developed independently. Custom deliverables created specifically for Client and paid for in full shall become Client&apos;s property upon final payment, subject to Solisys Digital&apos;s right to use anonymized, aggregated data for improving its services.
               </p>
             </section>
 
@@ -82,14 +82,14 @@ export default function Terms() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">8. Warranties and Disclaimers</Subheading>
               <p className="text-gray-700 mb-4">
-                Solisys Digital warrants that services will be performed in a workmanlike manner consistent with industry standards. EXCEPT AS EXPRESSLY SET FORTH HEREIN, SOLISYS DIGITAL DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. We do not guarantee specific business outcomes, revenue increases, or performance metrics. Services are provided "as is" to the extent permitted by applicable law.
+                Solisys Digital warrants that services will be performed in a workmanlike manner consistent with industry standards. EXCEPT AS EXPRESSLY SET FORTH HEREIN, SOLISYS DIGITAL DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. We do not guarantee specific business outcomes, revenue increases, or performance metrics. Services are provided &quot;as is&quot; to the extent permitted by applicable law.
               </p>
             </section>
 
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">9. Limitation of Liability</Subheading>
               <p className="text-gray-700 mb-4">
-                TO THE MAXIMUM EXTENT PERMITTED BY TEXAS LAW, SOLISYS DIGITAL'S TOTAL LIABILITY FOR ANY CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS SHALL NOT EXCEED THE TOTAL AMOUNT PAID BY CLIENT TO SOLISYS DIGITAL IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM. SOLISYS DIGITAL SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST REVENUE, OR BUSINESS INTERRUPTION, REGARDLESS OF THE THEORY OF LIABILITY.
+                TO THE MAXIMUM EXTENT PERMITTED BY TEXAS LAW, SOLISYS DIGITAL&apos;S TOTAL LIABILITY FOR ANY CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS SHALL NOT EXCEED THE TOTAL AMOUNT PAID BY CLIENT TO SOLISYS DIGITAL IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM. SOLISYS DIGITAL SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST REVENUE, OR BUSINESS INTERRUPTION, REGARDLESS OF THE THEORY OF LIABILITY.
               </p>
             </section>
 
@@ -131,7 +131,7 @@ export default function Terms() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">15. General Provisions</Subheading>
               <p className="text-gray-700 mb-4">
-                These terms, together with any applicable SOW, constitute the entire agreement between the parties. No modification shall be effective unless made in writing and signed by both parties. If any provision is found unenforceable, the remaining provisions shall remain in full effect. Solisys Digital may assign this agreement in connection with a merger or acquisition. Client may not assign these terms without Solisys Digital's prior written consent. These terms do not create any agency, partnership, or joint venture relationship between the parties.
+                These terms, together with any applicable SOW, constitute the entire agreement between the parties. No modification shall be effective unless made in writing and signed by both parties. If any provision is found unenforceable, the remaining provisions shall remain in full effect. Solisys Digital may assign this agreement in connection with a merger or acquisition. Client may not assign these terms without Solisys Digital&apos;s prior written consent. These terms do not create any agency, partnership, or joint venture relationship between the parties.
               </p>
             </section>
 

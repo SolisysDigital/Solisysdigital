@@ -33,7 +33,7 @@ export default function Refund() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">1. Purpose and Scope</Subheading>
               <p className="text-gray-700 mb-4">
-                This Refund Policy governs refund requests for services provided by Solisys Digital, LLC. All services are outlined in individual Statements of Work ("SOW"), and refund eligibility is determined based on project completion status, acceptance criteria, and compliance with this policy. This policy is subject to Texas state law and any applicable federal regulations.
+                This Refund Policy governs refund requests for services provided by Solisys Digital, LLC. All services are outlined in individual Statements of Work (&quot;SOW&quot;), and refund eligibility is determined based on project completion status, acceptance criteria, and compliance with this policy. This policy is subject to Texas state law and any applicable federal regulations.
               </p>
             </section>
 
@@ -48,7 +48,7 @@ export default function Refund() {
                 <li><strong>Material Breach by Solisys Digital:</strong> Substantial failure by Solisys Digital to perform as required under the agreement</li>
               </ul>
               <p className="text-gray-700 mb-4">
-                Refunds are NOT available for: (a) services that have been completed and accepted by the client, regardless of business outcomes; (b) third-party costs (licenses, software subscriptions, tools, platforms, external vendor fees); (c) services terminated by the client without cause; (d) change requests or scope modifications not included in the original SOW; or (e) delays caused by the client's failure to meet obligations.
+                Refunds are NOT available for: (a) services that have been completed and accepted by the client, regardless of business outcomes; (b) third-party costs (licenses, software subscriptions, tools, platforms, external vendor fees); (c) services terminated by the client without cause; (d) change requests or scope modifications not included in the original SOW; or (e) delays caused by the client&apos;s failure to meet obligations.
               </p>
             </section>
 
@@ -78,7 +78,7 @@ export default function Refund() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">5. Refund Calculation</Subheading>
               <p className="text-gray-700 mb-4">
-                Approved refunds will be calculated on a pro rata basis based on the percentage of services not delivered or not meeting acceptance criteria. The refund amount will equal the paid fees for the disputed services minus: (a) costs for services that were delivered and met acceptance criteria; (b) all third-party costs (Salesforce licenses, marketing platform fees, advertising spend, software subscriptions, tools); (c) expenses incurred on the client's behalf; and (d) any applicable administrative fees. No refund will exceed the total amount paid by the client for the specific project in question.
+                Approved refunds will be calculated on a pro rata basis based on the percentage of services not delivered or not meeting acceptance criteria. The refund amount will equal the paid fees for the disputed services minus: (a) costs for services that were delivered and met acceptance criteria; (b) all third-party costs (Salesforce licenses, marketing platform fees, advertising spend, software subscriptions, tools); (c) expenses incurred on the client&apos;s behalf; and (d) any applicable administrative fees. No refund will exceed the total amount paid by the client for the specific project in question.
               </p>
             </section>
 
@@ -92,7 +92,7 @@ export default function Refund() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">7. Dispute Resolution</Subheading>
               <p className="text-gray-700 mb-4">
-                If you disagree with Solisys Digital's refund decision, you may request a second-level review by providing additional documentation, evidence, or clarifications within fifteen (15) days of the initial decision. A senior management representative will conduct an independent review and provide a written response within fifteen (15) business days. Solisys Digital's decision on the second-level review is final, subject to legal recourse available under applicable law and the dispute resolution provisions in our Terms & Conditions.
+                If you disagree with Solisys Digital&apos;s refund decision, you may request a second-level review by providing additional documentation, evidence, or clarifications within fifteen (15) days of the initial decision. A senior management representative will conduct an independent review and provide a written response within fifteen (15) business days. Solisys Digital&apos;s decision on the second-level review is final, subject to legal recourse available under applicable law and the dispute resolution provisions in our Terms &amp; Conditions.
               </p>
             </section>
 
@@ -106,7 +106,7 @@ export default function Refund() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">9. Project Cancellation</Subheading>
               <p className="text-gray-700 mb-4">
-                If a client cancels a project for reasons unrelated to Solisys Digital's performance, the client is responsible for payment of all services rendered and expenses incurred through the cancellation date, in addition to any applicable cancellation fees specified in the SOW. Third-party costs paid on the client's behalf are non-refundable. Work completed and deliverables provided remain the property of Solisys Digital unless otherwise specified in the SOW.
+                If a client cancels a project for reasons unrelated to Solisys Digital&apos;s performance, the client is responsible for payment of all services rendered and expenses incurred through the cancellation date, in addition to any applicable cancellation fees specified in the SOW. Third-party costs paid on the client&apos;s behalf are non-refundable. Work completed and deliverables provided remain the property of Solisys Digital unless otherwise specified in the SOW.
               </p>
             </section>
 
@@ -120,7 +120,7 @@ export default function Refund() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">11. Modifications to This Policy</Subheading>
               <p className="text-gray-700 mb-4">
-                Solisys Digital reserves the right to modify this Refund Policy at any time. Changes will be effective upon posting on our website with an updated "Last updated" date. Material changes will be communicated to existing clients via email. The version of this policy in effect at the time of service contract signing will govern that engagement. Continued engagement of services after policy updates constitutes acceptance of the current policy.
+                Solisys Digital reserves the right to modify this Refund Policy at any time. Changes will be effective upon posting on our website with an updated &quot;Last updated&quot; date. Material changes will be communicated to existing clients via email. The version of this policy in effect at the time of service contract signing will govern that engagement. Continued engagement of services after policy updates constitutes acceptance of the current policy.
               </p>
             </section>
 

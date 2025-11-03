@@ -33,7 +33,7 @@ export default function Privacy() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">1. Introduction</Subheading>
               <p className="text-gray-700 mb-4">
-                Solisys Digital, LLC ("we," "us," or "our") is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services or visit our website. By using our services, you consent to the data practices described in this policy. We comply with applicable privacy laws, including Texas privacy statutes and federal regulations such as the Gramm-Leach-Bliley Act where applicable.
+                Solisys Digital, LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services or visit our website. By using our services, you consent to the data practices described in this policy. We comply with applicable privacy laws, including Texas privacy statutes and federal regulations such as the Gramm-Leach-Bliley Act where applicable.
               </p>
             </section>
 
@@ -139,7 +139,7 @@ export default function Privacy() {
             </section>
 
             <section className="mb-12">
-              <Subheading className="text-2xl mb-4">10. Children's Privacy</Subheading>
+              <Subheading className="text-2xl mb-4">10. Children&apos;s Privacy</Subheading>
               <p className="text-gray-700 mb-4">
                 Our services are not directed to individuals under the age of 16 (or 18 in certain jurisdictions), and we do not knowingly collect personal information from children. If we become aware that we have inadvertently collected personal information from a child without parental consent, we will promptly delete such information. If you believe we have collected information from a child, please contact us immediately at <a href="mailto:service@solisysdigital.com" className="text-pink-600 hover:underline">service@solisysdigital.com</a>.
               </p>
@@ -162,7 +162,7 @@ export default function Privacy() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">13. Updates to This Policy</Subheading>
               <p className="text-gray-700 mb-4">
-                We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or for other operational, legal, or regulatory reasons. We will notify you of material changes by: posting the updated policy on our website with a revised "Last updated" date, sending email notifications to the address on file, or providing prominent website notices. Your continued use of our services after the effective date of changes constitutes acceptance of the updated policy. If you do not agree with the changes, you should discontinue use of our services and contact us to discuss your concerns.
+                We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or for other operational, legal, or regulatory reasons. We will notify you of material changes by: posting the updated policy on our website with a revised &quot;Last updated&quot; date, sending email notifications to the address on file, or providing prominent website notices. Your continued use of our services after the effective date of changes constitutes acceptance of the updated policy. If you do not agree with the changes, you should discontinue use of our services and contact us to discuss your concerns.
               </p>
             </section>
 
