@@ -69,7 +69,7 @@ function ContactInfo() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Address</h3>
-              <p className="text-gray-600">560 E Southlake Blvd, #100<br />Southlake, TX 76092</p>
+              <p className="text-gray-600">1560 E Southlake Blvd, Suite 100<br />Southlake, TX 76092</p>
             </div>
           </div>
         </div>

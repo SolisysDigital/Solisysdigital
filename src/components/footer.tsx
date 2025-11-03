@@ -18,7 +18,7 @@ function CallToAction() {
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        In 30 minutes, we&apos;ll assess goals, risks, and the fastest path to value.
+        We&apos;ll assess goals, risks, and the fastest path to value.
       </p>
       <div className="mt-6">
         <Button className="w-full sm:w-auto" href="/contact">

@@ -241,7 +241,7 @@ function CTASection() {
             Let&apos;s make the plan
           </Heading>
           <p className="mt-6 text-lg text-gray-600">
-            Ready to connect your growth engine? In 30 minutes, we&apos;ll map a focused 100-day plan to measurable value.
+            Ready to connect your growth engine? We&apos;ll map a focused 100-day plan to measurable value.
           </p>
           <div className="mt-8">
             <Button href="/contact">
