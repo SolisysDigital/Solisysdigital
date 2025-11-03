@@ -96,7 +96,7 @@ export default function Terms() {
             <section className="mb-12">
               <Subheading className="text-2xl mb-4">10. Indemnification</Subheading>
               <p className="text-gray-700 mb-4">
-                Each party shall indemnify, defend, and hold harmless the other party from and against any third-party claims, damages, losses, and expenses (including reasonable attorneys' fees) arising from its breach of these terms, violation of applicable law, or gross negligence.
+                Each party shall indemnify, defend, and hold harmless the other party from and against any third-party claims, damages, losses, and expenses (including reasonable attorneys&apos; fees) arising from its breach of these terms, violation of applicable law, or gross negligence.
               </p>
             </section>
 
