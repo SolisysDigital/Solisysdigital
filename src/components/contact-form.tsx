@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useCallback, useRef, useState } from 'react'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
+import { NumericCaptcha } from '@/components/numeric-captcha'
 import { Subheading } from '@/components/text'
 
 const sectors = [
@@ -16,15 +17,31 @@ const sectors = [
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [captchaValid, setCaptchaValid] = useState(false)
+  const [captchaError, setCaptchaError] = useState(false)
+  const [captchaKey, setCaptchaKey] = useState(0)
   const formRef = useRef<HTMLFormElement>(null)
+  const formLoadedAt = useRef(Date.now())
+
+  const handleCaptchaChange = useCallback((isValid: boolean) => {
+    setCaptchaValid(isValid)
+    if (isValid) setCaptchaError(false)
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
+    if (!captchaValid) {
+      setCaptchaError(true)
+      return
+    }
+
     setIsSubmitting(true)
     setSubmitStatus('idle')
+    setCaptchaError(false)
 
     const formData = new FormData(e.currentTarget)
-    
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -38,11 +55,16 @@ export function ContactForm() {
           phone: formData.get('phone'),
           sector: formData.get('sector'),
           goals: formData.get('goals'),
+          website: formData.get('website'),
+          formLoadedAt: formLoadedAt.current,
         }),
       })
 
       if (response.ok) {
         setSubmitStatus('success')
+        setCaptchaValid(false)
+        setCaptchaKey((k) => k + 1)
+        formLoadedAt.current = Date.now()
         formRef.current?.reset()
       } else {
         const errorData = await response.json()
@@ -50,6 +72,8 @@ export function ContactForm() {
         console.error('Error response headers:', response.headers)
         console.error('Error response body:', errorData)
         setSubmitStatus('error')
+        setCaptchaValid(false)
+        setCaptchaKey((k) => k + 1)
         alert(`Error ${response.status}: ${errorData.message || JSON.stringify(errorData)}`)
       }
     } catch (error) {
@@ -87,6 +111,15 @@ export function ContactForm() {
             )}
 
             <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="absolute -left-[9999px] h-0 w-0 opacity-0"
+              />
+
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -179,8 +212,18 @@ export function ContactForm() {
                 />
               </div>
 
+              <NumericCaptcha
+                key={captchaKey}
+                onChange={handleCaptchaChange}
+                error={captchaError}
+              />
+
               <div className="pt-4">
-                <Button type="submit" className="w-full py-4 text-lg" disabled={isSubmitting}>
+                <Button
+                  type="submit"
+                  className="w-full py-4 text-lg"
+                  disabled={isSubmitting || !captchaValid}
+                >
                   {isSubmitting ? 'Sending...' : 'Book a discovery call'}
                 </Button>
               </div>
@@ -197,4 +240,3 @@ export function ContactForm() {
     </div>
   )
 }
-

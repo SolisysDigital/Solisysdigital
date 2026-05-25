@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
+const MIN_FORM_TIME_MS = 3000
+
 export async function POST(request: Request) {
   try {
     const apiKey = process.env.RESEND_API_KEY
@@ -13,16 +15,33 @@ export async function POST(request: Request) {
       )
     }
 
-    const resend = new Resend(apiKey)
-    const { name, company, email, phone, sector, goals } = await request.json()
+    const { name, company, email, phone, sector, goals, website, formLoadedAt } =
+      await request.json()
 
-    // Basic validation
+    // Honeypot: bots fill hidden fields; pretend success so they do not adapt
+    if (website) {
+      return NextResponse.json({ message: 'Email sent successfully!' }, { status: 200 })
+    }
+
+    // Reject instant submissions (automated scripts)
+    if (
+      typeof formLoadedAt === 'number' &&
+      Date.now() - formLoadedAt < MIN_FORM_TIME_MS
+    ) {
+      return NextResponse.json(
+        { message: 'Submission too fast. Please try again.' },
+        { status: 400 }
+      )
+    }
+
     if (!name || !email || !goals) {
       return NextResponse.json(
         { message: 'Missing required fields: name, email, goals.' },
         { status: 400 }
       )
     }
+
+    const resend = new Resend(apiKey)
 
     const { data, error } = await resend.emails.send({
       from: 'Solisys Digital Contact Form <noreply@contactus.solisysdigital.com>',
@@ -58,4 +77,3 @@ export async function POST(request: Request) {
     )
   }
 }
-
