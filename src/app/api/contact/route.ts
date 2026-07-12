@@ -45,7 +45,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Solisys Digital Contact Form <noreply@contactus.solisysdigital.com>',
-      to: ['service@solisysdigital.com'],
+      to: ['Solisys@solisyspro.com'],
       subject: `New Contact Form Submission from ${name} - ${company || 'N/A'}`,
       html: `
         <h2>New Contact Form Submission</h2>

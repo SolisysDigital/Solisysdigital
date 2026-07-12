@@ -10,7 +10,7 @@ The contact form uses Resend to send emails from the verified subdomain `contact
 ### Domain Setup
 - **Sending domain**: `contactus.solisysdigital.com` (verified in Resend)
 - **Sending address**: `noreply@contactus.solisysdigital.com`
-- **Recipient**: `service@solisysdigital.com`
+- **Recipient**: `Solisys@solisyspro.com`
 
 ### DNS Records
 DNS records for `contactus.solisysdigital.com` are managed in Vercel project settings.
@@ -20,7 +20,7 @@ DNS records for `contactus.solisysdigital.com` are managed in Vercel project set
 1. User enters the numeric security code shown on the contact form
 2. Form submission triggers `/api/contact` endpoint
 3. API route checks honeypot/timing, validates data, and sends email via Resend
-4. Email sent from verified subdomain to your M365 email
+4. Email is sent from `noreply@contactus.solisysdigital.com` to `Solisys@solisyspro.com`
 5. No impact on main domain email configuration
 
 ## Files
